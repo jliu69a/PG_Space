@@ -17,6 +17,11 @@ class KeychainViewController: UIViewController {
         super.viewDidLoad()
         
         self.title = "Keychain"
+        
+        let backButton = UIBarButtonItem()
+        backButton.title = "Back"
+        navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
+        
         rowsData = ["Add New", "Retrieve", "Edit", "Delete"]
         
         tableView?.register(UITableViewCell.self, forCellReuseIdentifier: "CellId")
@@ -51,6 +56,25 @@ extension KeychainViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        var actionCode: Int = 0
         
+        switch indexPath.row {
+        case 0:
+            actionCode = PasswordConstants.kSavePassword
+        case 1:
+            actionCode = PasswordConstants.kRetrievePassword
+        case 2:
+            actionCode = PasswordConstants.kUpdatePassword
+        case 3:
+            actionCode = PasswordConstants.kDeletePassword
+        default:
+            actionCode = 0
+        }
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let vc = storyboard.instantiateViewController(withIdentifier: "KCDataViewController") as? KCDataViewController {
+            vc.selectedActionCode = actionCode
+            navigationController?.pushViewController(vc, animated: true)
+        }
     }
 }

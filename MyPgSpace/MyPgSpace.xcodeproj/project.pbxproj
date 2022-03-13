@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE13A46D27DD6FED003A7F95 /* KCDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE13A46C27DD6FED003A7F95 /* KCDataViewController.swift */; };
 		FE52705227DD341400C58479 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE52705127DD341400C58479 /* AppDelegate.swift */; };
 		FE52705427DD341400C58479 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE52705327DD341400C58479 /* SceneDelegate.swift */; };
 		FE52705627DD341400C58479 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE52705527DD341400C58479 /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE13A46C27DD6FED003A7F95 /* KCDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCDataViewController.swift; sourceTree = "<group>"; };
 		FE52704E27DD341400C58479 /* MyPgSpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPgSpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE52705127DD341400C58479 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE52705327DD341400C58479 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				FE52706F27DD392500C58479 /* KeychainViewController.swift */,
+				FE13A46C27DD6FED003A7F95 /* KCDataViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 			files = (
 				FE52706E27DD354500C58479 /* Constants.swift in Sources */,
 				FE52705627DD341400C58479 /* ViewController.swift in Sources */,
+				FE13A46D27DD6FED003A7F95 /* KCDataViewController.swift in Sources */,
 				FE52705227DD341400C58479 /* AppDelegate.swift in Sources */,
 				FE52705427DD341400C58479 /* SceneDelegate.swift in Sources */,
 				FE52707027DD392500C58479 /* KeychainViewController.swift in Sources */,

@@ -7,12 +7,9 @@
 
 import UIKit
 
-class Constants: NSObject {
-    
-    struct PasswordConstants {
-        static let kSavePassword: Int = 1
-        static let kRetrievePassword: Int = 2
-        static let kUpdatePassword: Int = 3
-        static let kDeletePassword: Int = 4
-    }
+struct PasswordConstants {
+    static let kSavePassword: Int = 1
+    static let kRetrievePassword: Int = 2
+    static let kUpdatePassword: Int = 3
+    static let kDeletePassword: Int = 4
 }
